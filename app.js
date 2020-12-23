@@ -26,6 +26,8 @@ app.use('/users', usersRouter);
 
 require("./src/database/connection");
 
+require("./src/bootstrap")();
+
 
 
 
