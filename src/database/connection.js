@@ -6,6 +6,20 @@ const sequelize = new Sequelize("socialnetwork","root","",{
 	operatorAliases: false
 });
 
-module.exports = sequelize;
+const connection_checker = async() =>{
+	try {
+	  await sequelize.authenticate();
+	  console.log('Connection has been established successfully.');
+	} catch (error) {
+	  console.error('Unable to connect to the database:', error);
+	}
+}
+
+
+
+module.exports = {
+	connection_checker,
+	sequelize,
+}
 global.sequelize = sequelize;
 

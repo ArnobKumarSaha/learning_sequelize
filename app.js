@@ -27,12 +27,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 console.log("############################################################");
 
-require("./src/database/connection");
-
+// This method is defined by me , to check connectivity.
+//require("./src/database/connection").connection_checker();
+// To close the database connection anytime , sequelize.close();
 //require("./src/bootstrap")();
-
-
-console.log("----------------------------------------------------");
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
