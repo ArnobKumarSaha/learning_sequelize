@@ -14,12 +14,14 @@ module.exports = async() =>{
 		foreignKey: "userId"
 	});
 
+	console.log("111111111111111111111111111111111111111111111");
+
 	const errHandler = (err) => {
 		console.log("Error : ", err);
 	}
 
 	const user = await User.create({
-		name: "ali ahmed tonoy",
+		name: "sumit chowdhury",
 		password: "13t44gf"
 	}).catch(errHandler);
 
@@ -28,8 +30,10 @@ module.exports = async() =>{
 		userId: user.id
 	}).catch(errHandler);
 
+	console.log("22222222222222222222222222222222222222222222222222");
+
 	const users = await User.findAll({
-		where: {name: "ali ahmed tonoy"},
+		where: {name: "sumit chowdhury"},
 		include: [{model:Tweet, as:"Tweets"}]
 	}).catch(errHandler);
 

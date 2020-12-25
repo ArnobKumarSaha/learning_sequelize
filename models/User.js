@@ -14,7 +14,7 @@ module.exports = sequelize.define("User", {
 		unique: true,
 	},
 	"password":{
-		type: Sequelize.INTEGER(21),
+		type: Sequelize.STRING(21),
 		allowNull: false,
 	}
 });

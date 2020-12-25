@@ -1,0 +1,68 @@
+    .split {
+      height: 50%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+      border: 3px solid green;
+  }
+  .childsplit {
+      height: 50%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+      border: 3px solid blue;
+  }
+  .left {
+      left: 0;
+      background-color: #DAA520;
+  }
+  .right {
+      right: 0;
+      background-color: #B8860B;
+  }
+  .centered {
+      position: absolute;
+      top: 80%;
+      left: 40%;
+      /*transform: translate(-50%, -50%);*/
+      text-align: center;
+  }
+  .topped {
+      position: absolute;
+      top: 0%;
+      left: 40%;
+      /*transform: translate(-50%, -50%);*/
+      text-align: center;
+  }
+  .leftgap{
+      margin-left: 1cm;
+  }
+  .rightgap{
+      margin-left: 1cm;
+  }
+  .bottomgap{
+      margin-bottom: 1cm;
+  }
+  .label{
+      width: 100px;
+      display: inline-block;
+  }
+  .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  .button1 {background-color: #4CAF50;} /* Green */
+  .button2 {background-color: #008CBA;} /* Blue */

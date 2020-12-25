@@ -1,5 +1,82 @@
-extends layout
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<link rel="stylesheet" href="/stylesheets/styles.css">
 
-block content
-  h1= title
-  p Welcome to #{title}
+<div class="split left">
+<h2 class="topped">Login form</h2>
+<form action="/mypage" method="GET">
+
+<fieldset class="leftgap rightgap" style="margin-top: 30px">
+
+<legend> <h3>Login here : </h3> </legend>
+
+<label class="label" for="email">Email:</label>
+<input class="bottomgap" type="text" id="email" name="email" >
+
+<label class="label" for="pswd">Password:</label>
+<input  class="bottomgap" type="text" id="pswd" name="pswd" ><br>
+
+<button class="button button1 centered" type="submit" onclick="alert('Yoy are now logged in !')" value="login">Login</button>
+
+</fieldset>
+</form>
+</div>
+
+
+
+<div class="split right">
+
+<h2 class="topped">Registration form</h2>
+<form action="/created" method="POST">
+
+<fieldset class="leftgap rightgap" style="margin-top: 30px">
+
+<legend> <h3>Personalia : </h3> </legend>
+
+<label class="label"  for="fname">First name:</label>
+<input class="bottomgap" type="text" id="fname" name="fname" value="John">
+
+<label class="label" for="lname">Last name:</label>
+<input  class="bottomgap" type="text" id="lname" name="lname" value="Doe"><br>
+
+
+
+
+<label class="label" for="email">Email:</label>
+<input class="bottomgap" type="text" id="email" name="email" >
+
+<label class="label" for="pswd">Password:</label>
+<input  class="bottomgap" type="text" id="pswd" name="pswd" ><br>
+
+
+
+
+
+<label class="label bottomgap" for="country">Which country:</label>
+
+<select style="width:165px" id="country" name="country">
+<option value="Bangladesh">Bangladesh</option>
+<option value="India">India</option>
+<option value="America">America</option>
+<option value="France">France</option>
+</select>
+
+
+
+<label class="label" for="addr">Address:</label>
+<input class="bottomgapl" type="text" id="addr" name="addr" ><br>
+
+</fieldset>
+
+
+<button class="button button2 centered" type="submit" onclick="alert('Registration Completed !')" value="Register">Register</button>
+
+</form>
+</div>
+</body>
+</html>
+
